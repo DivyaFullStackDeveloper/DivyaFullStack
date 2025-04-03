@@ -1,0 +1,40 @@
+<!-- compare number -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../assets/projects/js/js-css/compare-num.css">
+    <title>Number Comparison</title>
+  
+</head>
+<body>
+       <!-- script -->
+       <script>
+        function compareNumbers() {
+            let firstNum = Number(document.getElementById("first-number").value);
+            let secondNum = Number(document.getElementById("second-number").value);
+            let result = document.getElementById("result");
+
+            if (isNaN(firstNum) || isNaN(secondNum)) {
+                result.innerHTML = " Please enter valid numbers";
+                result.style.color = "red";
+                return;
+            }
+            
+            let difference = firstNum - secondNum;
+            result.innerHTML = `Difference: ${difference}`;
+            result.style.color = "teal";
+        }
+    </script>
+
+    <!-- main container -->
+    <div class="container">
+        <h1>Number Comparison</h1>
+        <input type="number" id="first-number" placeholder="Enter first number">
+        <input type="number" id="second-number" placeholder="Enter second number">
+        <button onclick="compareNumbers()">Compare</button>
+        <p id="result"></p>
+    </div>
+</body>
+</html>

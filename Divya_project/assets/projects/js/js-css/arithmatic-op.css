@@ -1,0 +1,33 @@
+.main-container {
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    height: 60vh;
+    width: 30vw;
+    background-color: gray;
+    text-align: center;
+    padding: 5%;
+    margin-top: 50px;
+}
+
+button {
+    background-color: green;
+    padding: 10px;
+    border-radius: 10px;
+    width: 90%;
+    height: 10%;
+    font-size: 20px;
+}
+
+input {
+    width: 90%;
+    height: 10%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
